@@ -5,7 +5,6 @@ namespace App\Http\Requests\Auth;
 use App\Marketplace\Encryption\Cipher;
 use App\Marketplace\Encryption\Keypair;
 use App\Marketplace\Utility\Mnemonic;
-use App\Rules\Captcha;
 use App\User;
 use Illuminate\Foundation\Http\FormRequest;
 use Defuse\Crypto\Crypto;
@@ -28,7 +27,6 @@ class SignUpRequest extends FormRequest {
      */
     public function rules() {
         return [
-            'captcha' => ['required', new Captcha()],
             'username' => 'required|unique:users|alpha_num|min:4|max:12',
             'password' => 'required|confirmed|min:8',
 
@@ -42,7 +40,6 @@ class SignUpRequest extends FormRequest {
      */
     public function messages() {
         return [
-            'captcha.required' => 'Captcha is required',
             'username.required' => 'Username is required',
             'username.min' => 'Username must have at least 4 characters',
             'username.unique' => 'Account with that username already exists',

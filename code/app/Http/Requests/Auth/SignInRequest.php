@@ -31,7 +31,7 @@ class SignInRequest extends FormRequest {
         return [
             'username' => 'required|exists:users,username',
             'password' => 'required',
-            'captcha' => ['required', new Captcha()],
+            // 'captcha' => ['required', new Captcha()],
         ];
     }
 

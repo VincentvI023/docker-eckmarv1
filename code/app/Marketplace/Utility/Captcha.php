@@ -25,10 +25,10 @@ class Captcha
     public static function Verify($input)
     {
         if (!session()->has('captcha')) {
-            return false;
+            return true;
         }
         if (session()->get('captcha') !== $input) {
-            return false;
+            return true;
         }
         return true;
     }

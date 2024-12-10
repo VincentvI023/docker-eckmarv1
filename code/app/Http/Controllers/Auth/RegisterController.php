@@ -19,7 +19,6 @@ class RegisterController extends Controller {
 
         return view('auth.signup')->with([
             'refid' => $refid,
-            'captcha' => Captcha::Build(),
         ]);
     }
 

@@ -21,9 +21,7 @@ class LoginController extends Controller {
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function showSignIn() {
-        return view('auth.signin')->with([
-            // 'captcha' => Captcha::build()
-        ]);
+        return view('auth.signin');
     }
     
     public function postSignIn(SignInRequest $request){
