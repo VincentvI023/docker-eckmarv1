@@ -1,0 +1,38 @@
+version: "2"
+services:
+  nginx:
+    build: ./nginx/
+    ports:
+      - 80:80
+
+    volumes:
+      - ./code/:/var/www/html/
+    links:
+      - php
+      - db
+  php:
+    build: ./code/
+    expose:
+      - 9000
+    volumes:
+      - ./code/:/var/www/html/
+    environment:
+      - "DB_PORT=3306"
+      - "DB_HOST=db"
+  db:
+    image: mysql/mysql-server
+    volumes:
+      - mysql-data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: admin1234
+      MYSQL_DATABASE: marketplace
+    ports:
+      - "3306:3306"
+
+volumes:
+  mysql-data:
+
+
+networks:
+  app_network:
+    driver: bridge
