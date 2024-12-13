@@ -2,3 +2,11 @@ Buyer
 username: test37896
 password: test5375682!
 reset-key: task possibly rest indeed line wrap cup door birthday jock laid distant pink new purpose journey youth decay shine type upon verse ring moment
+
+username: buyer
+password: buyer123
+
+Admin
+username: admin
+password: Admin123!
+reset-key: task possibly rest indeed line wrap cup door birthday jock laid distant pink new purpose journey youth decay shine type upon verse ring moment

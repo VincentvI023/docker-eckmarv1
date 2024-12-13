@@ -101,9 +101,9 @@ class NewProductRequest extends FormRequest
             throw new RequestException('Something went wrong try again!' . $e -> getMessage());
         }
         // importing product to elasticsearch index
-        if ($baseProduct->quantity > 0){
-            Product::where('id',$baseProduct->id)->searchable();
-        }
+        // if ($baseProduct->quantity > 0){
+        //     //Product::where('id',$baseProduct->id)->searchable();
+        // }
 
         // TODO Unit test for product importing
         // TODO Sold products = unsearchable
