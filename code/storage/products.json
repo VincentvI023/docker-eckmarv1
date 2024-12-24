@@ -1,0 +1,92 @@
+[
+    {
+        "name": "Anonymous VPN Subscription",
+        "description": "Secure and private VPN service for 1 year.",
+        "rules": "No sharing of login credentials.",
+        "quantity": 50,
+        "mesure": "subscription",
+        "coins": "btc,xmr",
+        "category": "Digital Products",
+        "type": "digital",
+        "digital": {
+            "autodelivery": true,
+            "content": "Download link and activation code provided upon purchase."
+        },
+        "shipping": null,
+        "offer": {
+            "min_quantity": 1,
+            "price": 15.00
+        }
+    },
+    {
+        "name": "Untraceable Burner Phone",
+        "description": "Prepaid burner phone with no registration required.",
+        "rules": "Use responsibly, legal jurisdictions vary.",
+        "quantity": 30,
+        "mesure": "item",
+        "coins": "btc,xmr,eth",
+        "category": "Physical Products",
+        "type": "physical",
+        "physical": {
+            "countries_option": "include",
+            "countries": "US,UK,DE",
+            "country_from": "HK"
+        },
+        "shipping": {
+            "name": "Standard Discreet Shipping",
+            "price": 10.00,
+            "duration": "2-4 weeks",
+            "from_quantity": 1,
+            "to_quantity": 10
+        },
+        "offer": {
+            "min_quantity": 1,
+            "price": 50.00
+        }
+    },
+    {
+        "name": "Hacking E-Book Collection",
+        "description": "Comprehensive e-books on ethical hacking and cybersecurity.",
+        "rules": "For educational purposes only.",
+        "quantity": 100,
+        "mesure": "collection",
+        "coins": "btc",
+        "category": "Digital Products",
+        "type": "digital",
+        "digital": {
+            "autodelivery": true,
+            "content": "Downloadable zip file with all e-books."
+        },
+        "shipping": null,
+        "offer": {
+            "min_quantity": 1,
+            "price": 25.00
+        }
+    },
+    {
+        "name": "Cryptocurrency Wallet Hardware",
+        "description": "Secure hardware wallet for storing multiple cryptocurrencies.",
+        "rules": "Ensure firmware is updated before use.",
+        "quantity": 20,
+        "mesure": "item",
+        "coins": "btc,eth,xmr",
+        "category": "Physical Products",
+        "type": "physical",
+        "physical": {
+            "countries_option": "all",
+            "countries": "",
+            "country_from": "CN"
+        },
+        "shipping": {
+            "name": "Express Courier",
+            "price": 20.00,
+            "duration": "1-2 weeks",
+            "from_quantity": 1,
+            "to_quantity": 5
+        },
+        "offer": {
+            "min_quantity": 1,
+            "price": 120.00
+        }
+    }
+]
