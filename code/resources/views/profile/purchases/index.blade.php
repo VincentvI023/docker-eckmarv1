@@ -44,9 +44,8 @@
             <th>Price</th>
             <th>Shipping</th>
             <th>Total</th>
-
-            <th>Address</th>
-            <th>ID</th>
+            <th>Vendor Payment Address</th>
+            {{-- <th>ID</th> --}}
 
         </tr>
         </thead>
@@ -81,9 +80,9 @@
                 <td>
                     <input type="text" readonly="readonly" class="form-control form-control-sm" value="{{ $purchase -> address }}">
                 </td>
-                <td class="text-right">
-                    <a href="{{ route('profile.purchases.single', $purchase) }}" class="btn btn-sm {{ $purchase -> isCanceled() ? 'btn-danger' : 'btn-mblue' }} mt-1"
-                         >@if($purchase->isCanceled()) <em>Canceled</em> @else {{ $purchase -> short_id }} @endif</a>
+                {{-- <td class="text-right">
+                    <a href="{{ route('profile.purchases.single', $purchase) }}" class="btn btn-sm {{ $purchase -> isCanceled() ? 'btn-danger' : 'btn-mblue' }} mt-1" --}}
+                         {{-- >@if($purchase->isCanceled()) <em>Canceled</em> @else {{ $purchase -> short_id }} @endif</a> --}}
 
 
                 </td>
@@ -91,6 +90,13 @@
         @endforeach
         </tbody>
     </table>
+
+    <div class="alert alert-danger">
+        <h4 class="alert-heading">Payment Instructions</h4>
+        <p>To confirm your purchase, please send the exact payment amount to the vendor's wallet address shown under "Vendor Payment Address". The transaction will be processed once payment is received.</p>
+        <hr>
+        <p class="mb-0">Important: Make sure to send the exact amount displayed and use the correct wallet address to avoid any issues with your order processing.</p>
+    </div>
 
     {{ $purchases -> links('includes.paginate') }}
 @stop
