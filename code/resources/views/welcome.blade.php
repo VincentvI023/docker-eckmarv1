@@ -14,44 +14,39 @@
 
             <div class="row">
                 <div class="col">
-                    <h1 class="col-10">Welcome to {{config('app.name')}}</h1>
+                    <h1 class="col-10">Welcome to the {{config('app.name')}}</h1>
                     <hr>
                 </div>
             </div>
 
             <div class="row">
-                <div class="col">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, aliquid cupiditate dolore enim et
-                    eveniet fugiat illum ipsum itaque minus molestias nihil optio porro quisquam quo saepe sunt velit
-                    veritatis.
-                </div>
-            </div>
-            <div class="row mt-5">
+    <div class="col">
+        Welcome to the premier marketplace for secure and anonymous transactions. Browse with confidence, knowing your privacy is our priority.
+    </div>
+</div>
+<div class="row mt-5">
 
-                <div class="col-md-4">
-                    <h4><i class="fa fa-money-bill-wave-alt text-info"></i> No deposit</h4>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquid dolorem hic nisi
-                        ratione repellendus suscipit totam vitae!
-                    </p>
-                </div>
+    <div class="col-md-4">
+        <h4><i class="fa fa-money-bill-wave-alt text-info"></i> No Deposit Required</h4>
+        <p>
+            Start trading immediately without the need for upfront deposits. Enjoy a hassle-free experience with no barriers to entry.
+        </p>
+    </div>
 
-                <div class="col-md-4">
-                    <h4><i class="fa fa-shield-alt text-info"></i> Escrow</h4>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquid dolorem hic nisi
-                        ratione repellendus suscipit totam vitae!
-                    </p>
-                </div>
+    <div class="col-md-4">
+        <h4><i class="fa fa-shield-alt text-info"></i> Escrow Protection</h4>
+        <p>
+            All transactions are secured through our escrow system, ensuring both buyers and sellers are protected throughout the process.
+        </p>
+    </div>
 
-                <div class="col-md-4">
-                    <h4><i class="fa fa-coins text-info"></i> Multiple-Coins</h4>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquid dolorem hic nisi
-                        ratione repellendus suscipit totam vitae!
-                    </p>
-                </div>
-            </div>
+    <div class="col-md-4">
+        <h4><i class="fa fa-coins text-info"></i> Multiple Cryptocurrency Support</h4>
+        <p>
+            We support a wide range of cryptocurrencies, offering flexibility and convenience for every user.
+        </p>
+    </div>
+</div>
             <div class="row">
                 <div class="col">
                     <hr>
